@@ -13,7 +13,7 @@ const   std::string &Weapon::getType() const
     return (type);
 }
 
-void    Weapon::setType(std::string p_type)
+void    Weapon::setType(const std::string &p_type)
 {
     type = p_type;
 }

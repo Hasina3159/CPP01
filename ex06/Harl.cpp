@@ -52,3 +52,48 @@ void Harl::complain( std::string level )
 		}
 	}
 }
+
+int	Harl::ft_get_level(const std::string &level)
+{
+	size_t		level_nb{4};
+	std::string	levels[] = {
+		"DEBUG",
+		"INFO",
+		"WARNING",
+		"ERROR"
+	};
+
+	for (size_t i = 0; i < level_nb; i++)
+	{
+		if (levels[i] == level)
+			return (i);
+	}
+	return (5);
+}
+
+void	Harl::ft_show_above(const std::string &level, int index)
+{
+	if (index == -1)
+		index = ft_get_level(level);
+	switch (index)
+	{
+		case DEBUG:
+			complain("DEBUG");
+			break;
+		case INFO:
+			complain("INFO");
+			break;
+		case WARNING:
+			complain("WARNING");
+			break;
+		case ERROR:
+			complain("ERROR");
+			return ;
+			break;
+		default:
+			return ;
+			break;
+	}
+	std::cout << std::endl;
+	ft_show_above(level, index + 1);
+}

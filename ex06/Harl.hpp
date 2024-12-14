@@ -17,6 +17,8 @@ class Harl
 		Harl();
 		~Harl();
 		void 	complain( std::string level );
+		int		ft_get_level(const std::string &level);
+		void	ft_show_above(const std::string &level, int index);
 };
 
 #endif

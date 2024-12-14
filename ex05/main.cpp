@@ -7,11 +7,6 @@ int main(int argc, char **argv)
 	if (argc != 2)
 		return (0);
 	harl = Harl();
-	harl.ft_show_above(argv[1], -1);
-	/*harl.complain("DEBUG");
-	harl.complain("INFO");
-	harl.complain("WARNING");
-	harl.complain("ERROR");
-	harl.complain("NOTHING");*/
+	harl.complain(argv[1]);
 	return (0);
 }
