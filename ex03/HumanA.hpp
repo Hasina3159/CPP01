@@ -7,12 +7,12 @@
 
 class HumanA {
 private:
-    Weapon &weapon;  // Copie de l'arme
+    Weapon &weapon;
     std::string name;
 
 public:
-    HumanA(std::string p_name, Weapon &p_weapon);
-    ~HumanA();
+    HumanA( std::string p_name, Weapon &p_weapon );
+    ~HumanA( void );
     void attack() const;
 };
 

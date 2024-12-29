@@ -17,7 +17,7 @@ void randomChump( std::string name )
 int main( void )
 {
 	std::string name;
-	Zombie      *zombie{nullptr};
+	Zombie      *zombie = NULL;
 	
 	name = "randomZombie_01";
 	

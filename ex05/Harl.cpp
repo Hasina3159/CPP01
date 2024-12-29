@@ -27,7 +27,7 @@ void Harl::error( void )
 
 void Harl::complain( std::string level )
 {
-	size_t		level_nb{4};
+	size_t		level_nb = 4;
 	std::string	levels[] = {
 		"DEBUG",
 		"INFO",

@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 
 	if (!file_out.is_open())
 	{
-		std::cerr << "Impossible d'ouvrir le fichier : [" << filename << "]" << std::endl;
+		std::cerr << "Impossible de creer le fichier : [" << filename << "]" << std::endl;
 		return (1);
 	}
 
