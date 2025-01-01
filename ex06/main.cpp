@@ -3,7 +3,7 @@
 int main(int argc, char **argv)
 {
 	Harl	harl;
-	int		level{0};	
+	int		level = 0;	
 
 	if (argc != 2)
 		return (0);

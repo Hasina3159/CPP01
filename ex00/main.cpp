@@ -18,13 +18,13 @@ int main( void )
 {
 	std::string name;
 	Zombie      *zombie = NULL;
-	
+
 	name = "randomZombie_01";
-	
-	randomChump(name);
-	randomChump("randomZombie_02");
+
 	zombie = newZombie("newZombie_01");
 	zombie->announce();
+	randomChump(name);
+	randomChump("randomZombie_02");
 	delete zombie;
 	return (0);
 }
